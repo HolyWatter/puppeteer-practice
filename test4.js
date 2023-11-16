@@ -89,7 +89,7 @@ async function scrollDown(page) {
     }, scrollStep);
 
     // 스크롤 이벤트 발생 후 잠시 대기 (필요에 따라 조절 가능)
-    await page.waitForTimeout(500); // .5초 대기
+    await page.waitForTimeout(1000); // .5초 대기
 
     const newHeight = await page.evaluate(() => {
       return document.body.scrollHeight;
